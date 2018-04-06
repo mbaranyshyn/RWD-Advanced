@@ -1,0 +1,106 @@
+    body {
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+    }
+    
+    header {
+        width: 100%;
+        height: 20vh;
+        display: flex;
+        margin-bottom: 10px;
+    }
+    
+    .logo {
+        background: rgb(212, 105, 110);
+        width: 100%;
+        height: 20vh;
+        border-radius: 9px;
+    }
+    
+    .blue {
+        background: rgb(78, 191, 206);
+        width: 100%;
+        height: 30vh;
+        border-radius: 11px;
+        margin-bottom: 10px;
+    }
+    
+    main {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .content {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .image {
+        width: 100%;
+        height: 25vh;
+        border-radius: 7px;
+        margin-bottom: 10px;
+        background: rgb(146, 142, 142);
+    }
+    
+    .text {
+        width: 100%
+    }
+    
+    div p {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 17px;
+    }
+    
+    @media screen and (min-width: 768px) {
+        header {
+            justify-content: flex-start;
+        }
+        main {
+            width: 100%;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .logo {
+            width: 50%;
+        }
+        .blue {
+            height: 30vh;
+        }
+        .content {
+            width: 47%;
+        }
+        .none {
+            display: none;
+        }
+        .text {
+            width: 100%;
+        }
+        .image {
+            width: 100%;
+            height: 30vh;
+        }
+    }
+    
+    @media screen and (min-width: 1024px) {
+        .none {
+            display: block;
+        }
+        .blue {
+            height: 45vh;
+        }
+        .content {
+            width: 32%;
+        }
+        body {
+            margin: 10px 120px;
+        }
+        .logo {
+            width: 32%;
+            height: 19vh;
+        }
+    }
